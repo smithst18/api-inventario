@@ -1,0 +1,11 @@
+// .sequelizerc
+require('dotenv').config();
+const path = require('path');
+
+//archivo de configuracion de sequelize-cli para micrations
+module.exports = {
+  'config': path.resolve('app','config', 'config.js'),
+  'models-path': path.resolve('app', 'models'),
+  'seeders-path': path.resolve('app', 'database','seeders'),
+  'migrations-path': path.resolve('app', 'database','migrations'),
+}

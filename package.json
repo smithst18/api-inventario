@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "web-based inventory, customer and product management application ",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "dev": "supervisor app/server.js",
+    "seed": "npx sequelize-cli db:seed:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "model": "npx sequelize-cli model:generate --name User --attributes name:string"
+  },
+  "author": "E.A.A",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "qrcode": "^1.3.2",
+    "sequelize": "^6.7.0",
+    "socket.io": "^4.4.0",
+    "validator": "^13.6.0"
+  }
+}
