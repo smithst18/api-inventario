@@ -2,7 +2,7 @@
 var { Customer } = require('../models/index');
 const { Op } = require("sequelize");
 module.exports = {
-    //save customer
+    //save customers
     save:async function (req,res){
         var params = req.body;
         var user = req.user;
