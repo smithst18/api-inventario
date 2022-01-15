@@ -4,7 +4,7 @@ const app = require('http').Server(server);
 //crear instancia del socket
 const io = require('socket.io')(app, {
   cors: {
-      origin: process.env.FRONT_CORS_URL || "http://localhost:4200",
+      origin: [process.env.FRONT_CORS_URL,"http://localhost:4200"],
       methods: ["GET", "POST","DELETE"],
       transports: ['websocket', 'polling'],
       credentials: true
